@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.ExtraLight{
+  font-weight: 200;
+  font-size: smaller;
+}
+html, body{
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 29px;
+  background: linear-gradient(0deg, rgba(19, 20, 23, 1) 70%, rgba(88, 47, 255, 0.6) 100%);
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: #B5B5B5;
+}
+
+.button {
+  background: none;
+}
+
+.temporizador {
+  width: 100%;
+  height: 1px;
+}
+
+.progress, .progress-bar{
+  height: 100%;
+}
+.progress-bar{
+  background-color: white;
+}
+
+.nav {
+  width: 100vw;
+  height: 68px;
+  background-color: #1D1F24;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
