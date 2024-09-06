@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="embaixador"></div>
+    <div id="sombreado">
+    <div id="logo"></div>
+    <div id="texto">Produza, escute e vivêncie o melhor da música! </div>
+    <div id="button"><a id="registro" >Registrar</a></div>
+    <div id="entrar"><a>Entrar</a></div>
+</body>
+<script>
+   const registro = document.getElementById('registro');
+    const button = document.getElementById('button');
+      const entrar = document.getElementById('entrar')
+
+        button.addEventListener('mousedown', function() {
+            button.style.backgroundColor = "#331b91";
+            registro.style.color = "#b8b8b8";
+        });
+        button.addEventListener('mouseup', function() {
+            button.style.backgroundColor = '#582FFF';
+            registro.style.color = '#FFFFFF';
+        });
+       entrar.addEventListener('mousedown', function(){
+            entrar.style.color = "#b8b8b8";
+       });
+       entrar.addEventListener('mouseup', function(){
+            entrar.style.color = '#FFFFFF';
+       });
+</script>
+</html>
