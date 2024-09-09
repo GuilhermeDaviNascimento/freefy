@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-.ExtraLight{
+.ExtraLight {
   font-weight: 200;
   font-size: smaller;
 }
-html, body{
+
+html,
+body {
   font-family: "Inter", sans-serif;
   width: 100%;
   height: 100%;
@@ -34,10 +36,12 @@ body {
   height: 1px;
 }
 
-.progress, .progress-bar{
+.progress,
+.progress-bar {
   height: 100%;
 }
-.progress-bar{
+
+.progress-bar {
   background-color: white;
 }
 
@@ -50,4 +54,9 @@ body {
   left: 0;
   display: flex;
   justify-content: space-evenly;
+}
+
+.elem:hover {
+  opacity: 0.5;
+  transition: 500ms linear; 
 }

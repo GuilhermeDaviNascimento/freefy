@@ -11,7 +11,6 @@ import repetir from "../svgs/repeat.svg";
 import play from "../svgs/play.svg";
 import Navbar from "../componentes/navbar";
 
-
 function Musica_Tocando() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -39,11 +38,17 @@ function Musica_Tocando() {
   };
 
   const handleRewind = () => {
-    audioRef.current.currentTime = Math.max(audioRef.current.currentTime - 10, 0);
+    audioRef.current.currentTime = Math.max(
+      audioRef.current.currentTime - 10,
+      0
+    );
   };
 
   const handleFastForward = () => {
-    audioRef.current.currentTime = Math.min(audioRef.current.currentTime + 10, audioRef.current.duration);
+    audioRef.current.currentTime = Math.min(
+      audioRef.current.currentTime + 10,
+      audioRef.current.duration
+    );
   };
 
   useEffect(() => {
@@ -94,20 +99,23 @@ function Musica_Tocando() {
           <div>
             <img src={aleatorio} alt="aleatorio" />
           </div>
-          <div className="d-flex gap-3">
+          <div className="d-flex gap-3 elem">
             <img
+              className="elem"
               src={anterior}
               alt="anterior"
               onClick={handleRewind}
               style={{ cursor: "pointer" }}
             />
             <img
+              className="elem"
               src={isPlaying ? pause : play}
               alt={isPlaying ? "pause" : "play"}
               onClick={togglePlayPause}
               style={{ cursor: "pointer" }}
             />
             <img
+              className="elem"
               src={proxima}
               alt="proxima"
               onClick={handleFastForward}
