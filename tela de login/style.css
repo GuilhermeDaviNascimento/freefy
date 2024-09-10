@@ -1,0 +1,161 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#degrade {
+  /* degrade de fundo */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #957DF9 0%, #131417 41.74%);
+}
+
+#djavan {
+  /* djavan */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  background: url(imgs/djavan.png) no-repeat center center;
+  background-size: cover;
+}
+
+#sombra {
+  /* sombreamento da tela */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  background: rgba(18, 17, 18, 0.64);
+}
+
+#logo {
+  /* logo do spotfy */
+  position: absolute;
+  width: 320px;
+  height: 155px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  background: url('imgs/logo.png') no-repeat center center;
+  background-size: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#Faça-login {
+  /* texto que fica a cima dos inputs */
+  position: absolute;
+  top: 193px;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.89);
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  outline: none;
+  border: 0px;
+  width: 300px;
+  height: 32px;
+  background: #1D1F24;
+  border-radius: 10px;
+  padding-left: 26px;
+  font-family: 'Rosario';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+::placeholder {
+  font-family: 'Rosario';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #6B7179;
+  mix-blend-mode: normal;
+}
+
+#email {
+  position: absolute;
+  top: 36%;
+}
+
+#password {
+  position: absolute;
+  top: 42%;
+}
+
+
+#entrar{
+  /* Botão entar*/
+  position: absolute;
+  width: 328px;
+  height: 42px;
+  top: 48%;
+  background: #582FFF;
+  border-radius: 10px;
+    /* nome "Entrar" */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+      /* centralizar o texto na div */
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      cursor: pointer;
+
+    
+}
+#nao-possui-conta{
+  /* texto a baixo dos inputs para criar conta */
+  position: absolute;
+  height: 13px;
+  top: 54%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 0.89);
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#criar-conta{
+  /* link para criar conta */
+  color: #582FFF;
+  cursor: pointer;
+}
+
+@media (min-width: 450px) {
+  #djavan {
+      /* djavan */
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 0px;
+      top: 0px;
+      background: url(imgs/djavan.png) no-repeat center center;
+      background-size: contain;
+  }
+}
+
+

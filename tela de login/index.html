@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    <div id="degrade"></div> 
+    <div id="djavan"></div>
+    <div id="sombra"></div>
+    <div id="logo"></div>
+    <div id="Faça-login">Faça login em sua conta</div>
+    <div id="email"><input type="email-texto" id="email-input" placeholder="Insira seu email"></div>
+    <div id="password"><input type="password" id="password-input" placeholder="Insira sua senha"></div>
+    <div id="entrar"><a>Entrar</a></div> 
+    <div id="nao-possui-conta">Não possui uma conta?<a id="criar-conta"> Clique aqui para criar!</a></div>
+    <button></button>
+</div>
+</body>
+<script>
+    const email = document.getElementById('email-input')
+    const password = document.getElementById('password-input')
+    const Entrar = document.getElementById('entrar')
+    const criar = document.getElementById('criar-conta')
+    
+    // criar borda roxa para o input email quando focado
+    email.addEventListener('focus',function(){
+        email.style.border = '1px solid #582FFF';
+    })
+
+    // remover borda roxa do input emailquando desfocado
+    email.addEventListener('blur',function(){
+        email.style.border = 'none';
+    })
+
+    // criar borda roxa para o input password quando focado
+    password.addEventListener('focus',function(){
+        password.style.border = '1px solid #582FFF';
+    })
+
+    // remover borda roxa do input password quando desfocado
+    password.addEventListener('blur',function(){
+        password.style.border = 'none';
+    })
+
+    // mudar cor do backgound do botao e cor do texto de entrar quando clicado
+    entrar.addEventListener('mousedown',function(){
+    entrar.style.background = '#331b91';
+    entrar.style.color = '#b8b8b8';
+    })
+    
+    // voltar para cor padrao do botao de entrar e cor do texto quando o mouse cancelar o click
+    entrar.addEventListener('mouseup',function(){
+    entrar.style.background = '#582FFF';
+    entrar.style.color = '#FFFFFF';
+    })
+
+    // mudar cor do link de criar conta quando clicado
+    criar.addEventListener('mousedown',function(){
+    criar.style.color = '#331b91';
+    })
+    
+    // mudar cor padrao do link de criar conta quando clicado
+    criar.addEventListener('mouseup',function(){
+    criar.style.color = '#582FFF';
+    })
+</script>
+</html>
